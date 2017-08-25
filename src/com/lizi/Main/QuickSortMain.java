@@ -6,7 +6,7 @@ public class QuickSortMain {
 
 	public static void main(String[] args) {
 		double []array={2,10,5,3,7,9,4,8,0,1,6};
-		QuickSort.sort1(array, 0, array.length-1);
+		QuickSort.sort3(array, 0, array.length-1);
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i]+"    ");
 		}

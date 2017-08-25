@@ -1,5 +1,6 @@
 package com.lizi.algorithm.graph;
 
+import com.lizi.algorithm.digraph.DirectedDFS;
 import com.lizi.datastructure.graph.Digraph;
 //可达性检测，将检测结果保存在二维数组
 public class TransitiveClosure {

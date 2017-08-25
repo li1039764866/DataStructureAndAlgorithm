@@ -1,6 +1,6 @@
 package com.lizi.Main;
 
-import com.lizi.algorithm.graph.KruskalMST;
+import com.lizi.algorithm.digraph.KruskalMST;
 import com.lizi.datastructure.graph.Edge;
 import com.lizi.datastructure.graph.EdgeWeightedGraph;
 

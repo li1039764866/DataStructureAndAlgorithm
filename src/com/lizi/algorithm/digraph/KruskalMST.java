@@ -1,10 +1,11 @@
-package com.lizi.algorithm.graph;
+package com.lizi.algorithm.digraph;
 
+import com.lizi.algorithm.graph.WeightedUnionFind;
 import com.lizi.datastructure.MinPQ;
 import com.lizi.datastructure.Queue;
 import com.lizi.datastructure.graph.Edge;
 import com.lizi.datastructure.graph.EdgeWeightedGraph;
-
+//克鲁斯卡尔算法-最小生成树
 public class KruskalMST {
 	private Queue<Edge> mst;
 	public KruskalMST(EdgeWeightedGraph graph) {

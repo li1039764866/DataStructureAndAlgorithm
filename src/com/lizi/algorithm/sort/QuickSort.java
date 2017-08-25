@@ -29,7 +29,7 @@ public class QuickSort {
 		int right_cursor = right; //记录右指针的位置
 		int pivot_key = array[left]; //记录关键值
 		while (left_cursor < right_cursor) //一轮排序，完成之后关键值左边的都比它小，右边的都比它大
-		{
+		{//关键值左右两边如果存在相等值，排序结束后位置依然存在两边
 			while (left_cursor < right_cursor&&array[right_cursor] >= pivot_key)
 			{
 				right_cursor--;
@@ -44,8 +44,8 @@ public class QuickSort {
 		array[left_cursor] = pivot_key;//结束循环的时候左右指针指向同一下标
 		return left_cursor;
 	}
-	//三向切分的快速排序，针对于多个重复值的排序可达线性
-	public static void sort1(double []array,int left,int right) {
+	//三向切分（小于，等于，大于）的快速排序，针对于大量重复键的排序可达线性
+	public static void sort3(double []array,int left,int right) {
 		if (right<=left) return;
 		int left_cursor = left; //记录左指针的位置
 		int right_cursor = right; //记录右指针的位置
@@ -56,8 +56,9 @@ public class QuickSort {
 			else if(array[now]>pivot_key) General.swap(array, now,right_cursor-- );
 			else now++;
 		}
-		sort1(array, left, left_cursor-1);
-		sort1(array, right_cursor+1, right);
+		//[left_cursor-1,right_cursor+1]为等于关键值部分，不需排序
+		sort3(array, left, left_cursor-1);	//小于部分排序
+		sort3(array, right_cursor+1, right);//大于部分排序
 	}
 	
 }

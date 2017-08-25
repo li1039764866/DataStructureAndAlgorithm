@@ -1,8 +1,8 @@
-package com.lizi.algorithm.graph;
+package com.lizi.algorithm.digraph;
 
 import com.lizi.datastructure.Stack;
 import com.lizi.datastructure.graph.Digraph;
-
+//有向图环的检测
 public class DirectedCycle {
 	private boolean[] marked;//标记是否访问过该点
 	private int[] edgeTo;//记录到达该顶点的上一顶点

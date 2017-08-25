@@ -11,4 +11,10 @@ public class General<T> {
 		array[i]=array[j];
 		array[j]=middle;
 	}
+	public static void swap(String[]array,int i,int j) {
+		String middle=array[i];
+		array[i]=array[j];
+		array[j]=middle;
+	}
+	
 }

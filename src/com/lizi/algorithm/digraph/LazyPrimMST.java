@@ -1,4 +1,4 @@
-package com.lizi.algorithm;
+package com.lizi.algorithm.digraph;
 
 import com.lizi.datastructure.MinPQ;
 import com.lizi.datastructure.Queue;

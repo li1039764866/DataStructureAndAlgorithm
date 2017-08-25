@@ -3,12 +3,12 @@ package com.lizi.algorithm.graph;
 import com.lizi.datastructure.Queue;
 import com.lizi.datastructure.Stack;
 import com.lizi.datastructure.graph.Digraph;
-
+//深度优先搜索获取三种顺序
 public class DepthFirstOrder {
 	private boolean[] marked;
 	private Queue<Integer> pre;//前序遍历
 	private Queue<Integer> post;//后序遍历
-	private Stack<Integer> reversePost;//逆后序遍历
+	private Stack<Integer> reversePost;//逆后序遍历，拓扑排序
 	public DepthFirstOrder(Digraph digraph) {
 		pre=new Queue<Integer>();
 		post=new Queue<Integer>();

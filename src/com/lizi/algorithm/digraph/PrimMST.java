@@ -1,4 +1,4 @@
-package com.lizi.algorithm.graph;
+package com.lizi.algorithm.digraph;
 
 import com.lizi.datastructure.Bag;
 import com.lizi.datastructure.IndexMinPQ;
