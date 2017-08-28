@@ -1,4 +1,4 @@
-package com.lizi.algorithm.graph;
+package com.lizi.algorithm.digraph;
 
 import com.lizi.datastructure.Queue;
 import com.lizi.datastructure.Stack;

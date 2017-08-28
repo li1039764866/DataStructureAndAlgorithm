@@ -1,6 +1,5 @@
 package com.lizi.algorithm.digraph;
 
-import com.lizi.algorithm.graph.DepthFirstOrder;
 import com.lizi.datastructure.graph.Digraph;
 //Õÿ∆À≈≈–Ú
 public class Topological {

@@ -1,5 +1,6 @@
 package com.lizi.algorithm.graph;
 
+import com.lizi.algorithm.digraph.DepthFirstOrder;
 import com.lizi.datastructure.graph.Digraph;
 
 public class KosarajuSCC {
