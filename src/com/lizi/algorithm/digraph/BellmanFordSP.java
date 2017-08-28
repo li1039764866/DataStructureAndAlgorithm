@@ -45,7 +45,7 @@ public class BellmanFordSP {
 		}
 		
 	}
-	private void findNegativeCycle() {
+	private void findNegativeCycle() {//负权值环
         int V = edgeTo.length;
         EdgeWeightedDigraph spt = new EdgeWeightedDigraph(V);
         for (int v = 0; v < V; v++)
