@@ -3,7 +3,7 @@ package com.lizi.algorithm.compress;
 import com.lizi.datastructure.MinPQ;
 import com.lizi.tool.BinaryStdIn;
 import com.lizi.tool.BinaryStdOut;
-//霍夫曼压缩与解压
+//霍夫曼编码
 public class Huffman {
 	private static int R=256;//字符数目
 	private static class Node implements Comparable<Node>{//节点类

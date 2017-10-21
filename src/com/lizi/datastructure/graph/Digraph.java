@@ -5,14 +5,14 @@ import com.lizi.datastructure.Bag;
 public class Digraph {
 	private final int V;//顶点个数
 	private int E;//边的数目
-	private Bag<Integer>[] adjacent;
+	private Bag<Integer>[] adjacent;//邻接包
 	@SuppressWarnings("unchecked")
-	public Digraph(int v){
-		this.V=v;
+	public Digraph(int V){
+		this.V=V;
 		this.E=0;
-		adjacent=(Bag<Integer>[])new Bag[v];
-		for (int i = 0; i < adjacent.length; i++) {
-			adjacent[v]=new Bag<Integer>();
+		adjacent=(Bag<Integer>[])new Bag[V];
+		for (int i = 0; i < V; i++) {
+			adjacent[i]=new Bag<Integer>();
 		}
 	}
 	public int V() {

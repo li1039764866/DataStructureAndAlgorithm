@@ -3,7 +3,7 @@ package com.lizi.algorithm.compress;
 import com.lizi.datastructure.symboltable.ThreeST;
 import com.lizi.tool.BinaryStdIn;
 import com.lizi.tool.BinaryStdOut;
-
+//LZW编码
 public class LZW {
 	private static final int R=256;
 	private static final int L=4096; //2^12，表示不同的字符串数量最大值
